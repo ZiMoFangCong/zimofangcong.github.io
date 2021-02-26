@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jquery滑动轮播图</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    </head>
+    <body>
+
+        <div class="home-banner">
+            <div class="home-banner-box">
+                <div class="home-banner-head">
+                    <h2>jquery滑动轮播图</h2>
+                </div>
+            </div>
+            <div class="home-banner-body">
+                <div class="home-banner-bg"></div>
+                <div class="home-banner-slider">
+                    <div class="home-banner-con">
+                        <div class="home-shadow">
+                            <div class="home-banner-line">
+                                <div class="home-banner-list">
+                                    <div class="item-q"></div>
+                                    <div class="item-q"></div>
+                                    <div class="item-q"></div>
+                                </div>
+                            </div>
+                            <div class="bd">
+                                <ul>
+                                    <li>
+                                        <img src="images/t1.png" alt="">
+                                        <div class="home-banner-text">
+                                            <div class="home-title">CARITER YAILISI</div>
+                                            <div class="home-text">我觉得建站这个产品特别好，功能简单易懂快速上手，做起一个网站时间特别短，省了不少精力不少钱</div>
+                                            <div class="home-button">
+                                                <a href="#">免费拥有</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/t2.png" alt="">
+                                        <div class="home-banner-text">
+                                            <div class="home-title">唯美婚纱</div>
+                                            <div class="home-text">体验了建站，发现网站的可编辑性非常大，不懂设计也可以做出很多个性的效果！服务很好。</div>
+                                            <div class="home-button">
+                                                <a href="#">免费拥有</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/t3.png" alt="">
+                                        <div class="home-banner-text">
+                                            <div class="home-title">ROSE CAKE</div>
+                                            <div class="home-text">的平台操作简易快捷，整个建站过程很顺畅。让企业网站有亮点，更完美！</div>
+                                            <div class="home-button">
+                                                <a href="#">免费拥有</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="prev"></a>
+                    <a href="javascript:void(0)" class="next"></a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            jQuery(".home-banner-slider").slide({
+                mainCell: ".bd ul",
+                effect: "left",
+                autoPlay: false,
+                delayTime: 700
+            });
+        </script>
+
+    </body>
+</html>
